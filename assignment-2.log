@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.19)  19 SEP 2020 19:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.19)  19 SEP 2020 19:45
 entering extended mode
-**./report.tex
-(report.tex
+**./assignment-2.tex
+(assignment-2.tex
 LaTeX2e <2020-02-02> patch level 5
 (/home/jesse/.miktex/texmfs/install/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -73,8 +73,8 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 ))
-(report.aux)
-\openout1 = `report.aux'.
+(assignment-2.aux)
+\openout1 = `assignment-2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
@@ -186,27 +186,28 @@ File: EBNF/object.pdf Graphic file (type pdf)
 <use EBNF/object.pdf>
 Package pdftex.def Info: EBNF/object.pdf  used on input line 108.
 (pdftex.def)             Requested size: 355.92645pt x 60.52554pt.
-[3 <./EBNF/value.pdf> <./EBNF/array.pdf> <./EBNF/object.pdf>] (report.aux) ) 
+[3 <./EBNF/value.pdf> <./EBNF/array.pdf> <./EBNF/object.pdf>]
+(/home/jesse/.miktex/texmfs/install/tex/latex/tools/.tex File ignored) [4]
+(assignment-2.aux) ) 
 Here is how much of TeX's memory you used:
- 1524 strings out of 493240
- 21494 string characters out of 3157141
+ 1530 strings out of 493240
+ 21733 string characters out of 3157141
  88691 words of memory out of 3000000
  6807 multiletter control sequences out of 15000+200000
  8362 words of font info for 30 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 30i,6n,23p,185b,189s stack positions out of 5000i,500n,10000p,200000b,50000s
- </
-home/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmtt10.pk> </ho
-me/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmbx12.pk> </home
-/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr10.pk> </home/je
-sse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi720/cmbx12.pk> </home/jess
-e/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr9.pk> </home/jesse/.m
-iktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmbx9.pk> </home/jesse/.mikt
-ex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr12.pk> </home/jesse/.miktex/
-texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr17.pk>
-Output written on report.pdf (3 pages, 127198 bytes).
+ 30i,6n,23p,191b,189s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </home/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm
+/dpi600/cmtt10.pk> </home/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/d
+pi600/cmbx12.pk> </home/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi
+600/cmr10.pk> </home/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi720
+/cmbx12.pk> </home/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/c
+mr9.pk> </home/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmbx9
+.pk> </home/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr12.pk
+> </home/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr17.pk>
+Output written on assignment-2.pdf (4 pages, 130984 bytes).
 PDF statistics:
- 354 PDF objects out of 1000 (max. 8388607)
+ 367 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

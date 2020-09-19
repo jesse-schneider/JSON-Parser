@@ -1,7 +1,7 @@
 PWD /home/jesse/prog-languages/Assignment-2
 INPUT /home/jesse/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt
-INPUT /home/jesse/prog-languages/Assignment-2/report.tex
-OUTPUT /home/jesse/prog-languages/Assignment-2/report.log
+INPUT /home/jesse/prog-languages/Assignment-2/assignment-2.tex
+OUTPUT /home/jesse/prog-languages/Assignment-2/assignment-2.log
 INPUT /home/jesse/.miktex/texmfs/install/tex/latex/base/article.cls
 INPUT /home/jesse/.miktex/texmfs/install/tex/latex/base/article.cls
 INPUT /home/jesse/.miktex/texmfs/install/tex/latex/base/size10.clo
@@ -28,9 +28,9 @@ INPUT /home/jesse/.miktex/texmfs/install/tex/latex/graphics/color.sty
 INPUT /home/jesse/.miktex/texmfs/install/tex/latex/graphics/color.sty
 INPUT /home/jesse/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
 INPUT /home/jesse/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
-INPUT /home/jesse/prog-languages/Assignment-2/report.aux
-INPUT /home/jesse/prog-languages/Assignment-2/report.aux
-OUTPUT /home/jesse/prog-languages/Assignment-2/report.aux
+INPUT /home/jesse/prog-languages/Assignment-2/assignment-2.aux
+INPUT /home/jesse/prog-languages/Assignment-2/assignment-2.aux
+OUTPUT /home/jesse/prog-languages/Assignment-2/assignment-2.aux
 INPUT /home/jesse/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 INPUT /home/jesse/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 INPUT /home/jesse/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
@@ -54,7 +54,7 @@ INPUT /home/jesse/.miktex/texmfs/install/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /home/jesse/prog-languages/Assignment-2/EBNF/whitespace.ebnf
 INPUT /home/jesse/prog-languages/Assignment-2/EBNF/whitespace.pdf
 INPUT /home/jesse/prog-languages/Assignment-2/EBNF/whitespace.pdf
-OUTPUT /home/jesse/prog-languages/Assignment-2/report.pdf
+OUTPUT /home/jesse/prog-languages/Assignment-2/assignment-2.pdf
 INPUT /home/jesse/prog-languages/Assignment-2/EBNF/whitespace.pdf
 INPUT /home/jesse/prog-languages/Assignment-2/EBNF/whitespace.pdf
 INPUT /home/jesse/prog-languages/Assignment-2/EBNF/digit.ebnf
@@ -88,7 +88,9 @@ INPUT /home/jesse/prog-languages/Assignment-2/EBNF/object.pdf
 INPUT /home/jesse/prog-languages/Assignment-2/EBNF/object.pdf
 INPUT /home/jesse/prog-languages/Assignment-2/EBNF/object.pdf
 INPUT /home/jesse/prog-languages/Assignment-2/EBNF/object.pdf
-INPUT /home/jesse/prog-languages/Assignment-2/report.aux
+INPUT /home/jesse/prog-languages/Assignment-2/Code/Json.hs
+INPUT /home/jesse/.miktex/texmfs/install/tex/latex/tools/.tex
+INPUT /home/jesse/prog-languages/Assignment-2/assignment-2.aux
 INPUT /home/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmtt10.pk
 INPUT /home/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmtt10.pk
 INPUT /home/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmbx12.pk
