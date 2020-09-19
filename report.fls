@@ -18,10 +18,10 @@ INPUT /home/jesse/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
 INPUT /home/jesse/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
 INPUT /home/jesse/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
 INPUT /home/jesse/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
-INPUT /home/jesse/prog-languages/Assignment-2/FillAFour.sty
-INPUT /home/jesse/prog-languages/Assignment-2/FillAFour.sty
-INPUT /home/jesse/prog-languages/Assignment-2/HaskellVerb.sty
-INPUT /home/jesse/prog-languages/Assignment-2/HaskellVerb.sty
+INPUT /home/jesse/prog-languages/Assignment-2/latex_packages/FillAFour.sty
+INPUT /home/jesse/prog-languages/Assignment-2/latex_packages/FillAFour.sty
+INPUT /home/jesse/prog-languages/Assignment-2/latex_packages/HaskellVerb.sty
+INPUT /home/jesse/prog-languages/Assignment-2/latex_packages/HaskellVerb.sty
 INPUT /home/jesse/.miktex/texmfs/install/tex/latex/fancyvrb/fancyvrb.sty
 INPUT /home/jesse/.miktex/texmfs/install/tex/latex/fancyvrb/fancyvrb.sty
 INPUT /home/jesse/.miktex/texmfs/install/tex/latex/graphics/color.sty

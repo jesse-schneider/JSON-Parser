@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.19)  19 SEP 2020 18:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.19)  19 SEP 2020 19:00
 entering extended mode
-**/home/jesse/prog-languages/Assignment-2/report.tex
-(/home/jesse/prog-languages/Assignment-2/report.tex
+**./report.tex
+(report.tex
 LaTeX2e <2020-02-02> patch level 5
 (/home/jesse/.miktex/texmfs/install/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -44,12 +44,18 @@ File: pdftex.def 2020/08/26 v1.2 Graphics/color driver for pdftex
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(/home/jesse/prog-languages/Assignment-2/FillAFour.sty
-Package: FillAFour 2004/04/06 Andrew Rock
-)
-(/home/jesse/prog-languages/Assignment-2/HaskellVerb.sty
-Package: HaskellVerb 2020/09/18 Andrew Rock
+(latex_packages/FillAFour.sty
 
+LaTeX Warning: You have requested package `latex_packages/FillAFour',
+               but the package provides `FillAFour'.
+
+Package: FillAFour 2004/04/06 Andrew Rock
+) (latex_packages/HaskellVerb.sty
+
+LaTeX Warning: You have requested package `latex_packages/HaskellVerb',
+               but the package provides `HaskellVerb'.
+
+Package: HaskellVerb 2020/09/18 Andrew Rock
 (/home/jesse/.miktex/texmfs/install/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
 \FV@CodeLineNo=\count88
@@ -67,7 +73,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 ))
-(/home/jesse/prog-languages/Assignment-2/report.aux)
+(report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -111,9 +117,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 15.
 
 
-pdfTeX warning: pdflatex (file /home/jesse/prog-languages/Assignment-2/EBNF/whi
-tespace.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5>
- allowed
+pdfTeX warning: pdflatex (file ./EBNF/whitespace.pdf): PDF inclusion: found PDF
+ version <1.7>, but at most version <1.5> allowed
 <EBNF/whitespace.pdf, id=1, 118.4425pt x 99.37125pt>
 File: EBNF/whitespace.pdf Graphic file (type pdf)
 <use EBNF/whitespace.pdf>
@@ -121,9 +126,8 @@ Package pdftex.def Info: EBNF/whitespace.pdf  used on input line 45.
 (pdftex.def)             Requested size: 106.59724pt x 89.43329pt.
 
 
-pdfTeX warning: pdflatex (file /home/jesse/prog-languages/Assignment-2/EBNF/dig
-it.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allo
-wed
+pdfTeX warning: pdflatex (file ./EBNF/digit.pdf): PDF inclusion: found PDF vers
+ion <1.7>, but at most version <1.5> allowed
 <EBNF/digit.pdf, id=2, 54.2025pt x 220.825pt>
 File: EBNF/digit.pdf Graphic file (type pdf)
 <use EBNF/digit.pdf>
@@ -131,12 +135,11 @@ Package pdftex.def Info: EBNF/digit.pdf  used on input line 55.
 (pdftex.def)             Requested size: 48.78178pt x 198.74065pt.
 [1
 
-{/home/jesse/.miktex/texmfs/data/pdftex/config/pdftex.map} </home/jesse/prog-la
-nguages/Assignment-2/EBNF/whitespace.pdf>]
+{/home/jesse/.miktex/texmfs/data/pdftex/config/pdftex.map} <./EBNF/whitespace.p
+df>]
 
-pdfTeX warning: pdflatex (file /home/jesse/prog-languages/Assignment-2/EBNF/num
-ber.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
-owed
+pdfTeX warning: pdflatex (file ./EBNF/number.pdf): PDF inclusion: found PDF ver
+sion <1.7>, but at most version <1.5> allowed
 <EBNF/number.pdf, id=23, 586.19pt x 65.24374pt>
 File: EBNF/number.pdf Graphic file (type pdf)
 <use EBNF/number.pdf>
@@ -149,9 +152,8 @@ Overfull \hbox (10.8631pt too wide) in paragraph at lines 65--66
 
 
 
-pdfTeX warning: pdflatex (file /home/jesse/prog-languages/Assignment-2/EBNF/str
-ing.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
-owed
+pdfTeX warning: pdflatex (file ./EBNF/string.pdf): PDF inclusion: found PDF ver
+sion <1.7>, but at most version <1.5> allowed
 <EBNF/string.pdf, id=24, 538.01pt x 44.165pt>
 File: EBNF/string.pdf Graphic file (type pdf)
 <use EBNF/string.pdf>
@@ -159,21 +161,17 @@ Package pdftex.def Info: EBNF/string.pdf  used on input line 75.
 (pdftex.def)             Requested size: 430.40858pt x 35.33203pt.
 
 
-pdfTeX warning: pdflatex (file /home/jesse/prog-languages/Assignment-2/EBNF/val
-ue.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allo
-wed
+pdfTeX warning: pdflatex (file ./EBNF/value.pdf): PDF inclusion: found PDF vers
+ion <1.7>, but at most version <1.5> allowed
 <EBNF/value.pdf, id=25, 84.315pt x 136.51pt>
 File: EBNF/value.pdf Graphic file (type pdf)
 <use EBNF/value.pdf>
 Package pdftex.def Info: EBNF/value.pdf  used on input line 89.
 (pdftex.def)             Requested size: 75.88277pt x 122.85785pt.
-[2 </home/jesse/prog-languages/Assignment-2/EBNF/digit.pdf> </home/jesse/prog-l
-anguages/Assignment-2/EBNF/number.pdf> </home/jesse/prog-languages/Assignment-2
-/EBNF/string.pdf>]
+[2 <./EBNF/digit.pdf> <./EBNF/number.pdf> <./EBNF/string.pdf>]
 
-pdfTeX warning: pdflatex (file /home/jesse/prog-languages/Assignment-2/EBNF/arr
-ay.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allo
-wed
+pdfTeX warning: pdflatex (file ./EBNF/array.pdf): PDF inclusion: found PDF vers
+ion <1.7>, but at most version <1.5> allowed
 <EBNF/array.pdf, id=47, 238.8925pt x 67.25125pt>
 File: EBNF/array.pdf Graphic file (type pdf)
 <use EBNF/array.pdf>
@@ -181,36 +179,32 @@ Package pdftex.def Info: EBNF/array.pdf  used on input line 99.
 (pdftex.def)             Requested size: 215.00125pt x 60.52554pt.
 
 
-pdfTeX warning: pdflatex (file /home/jesse/prog-languages/Assignment-2/EBNF/obj
-ect.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
-owed
+pdfTeX warning: pdflatex (file ./EBNF/object.pdf): PDF inclusion: found PDF ver
+sion <1.7>, but at most version <1.5> allowed
 <EBNF/object.pdf, id=48, 395.4775pt x 67.25125pt>
 File: EBNF/object.pdf Graphic file (type pdf)
 <use EBNF/object.pdf>
 Package pdftex.def Info: EBNF/object.pdf  used on input line 108.
 (pdftex.def)             Requested size: 355.92645pt x 60.52554pt.
-[3 </home/jesse/prog-languages/Assignment-2/EBNF/value.pdf> </home/jesse/prog-l
-anguages/Assignment-2/EBNF/array.pdf> </home/jesse/prog-languages/Assignment-2/
-EBNF/object.pdf>] (/home/jesse/prog-languages/Assignment-2/report.aux) ) 
+[3 <./EBNF/value.pdf> <./EBNF/array.pdf> <./EBNF/object.pdf>] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 1522 strings out of 493240
- 21524 string characters out of 3157141
- 88661 words of memory out of 3000000
+ 1524 strings out of 493240
+ 21494 string characters out of 3157141
+ 88691 words of memory out of 3000000
  6807 multiletter control sequences out of 15000+200000
  8362 words of font info for 30 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 30i,6n,23p,223b,189s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home
-/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmtt10.pk> </home/j
-esse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmbx12.pk> </home/jes
-se/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr10.pk> </home/jesse/
-.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi720/cmbx12.pk> </home/jesse/.m
-iktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr9.pk> </home/jesse/.mikte
-x/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmbx9.pk> </home/jesse/.miktex/t
-exmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr12.pk> </home/jesse/.miktex/texm
-fs/data/fonts/pk/ljfour/public/cm/dpi600/cmr17.pk>
-Output written on /home/jesse/prog-languages/Assignment-2/report.pdf (3 pages, 
-127464 bytes).
+ 30i,6n,23p,185b,189s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </
+home/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmtt10.pk> </ho
+me/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmbx12.pk> </home
+/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr10.pk> </home/je
+sse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi720/cmbx12.pk> </home/jess
+e/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr9.pk> </home/jesse/.m
+iktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmbx9.pk> </home/jesse/.mikt
+ex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr12.pk> </home/jesse/.miktex/
+texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr17.pk>
+Output written on report.pdf (3 pages, 127198 bytes).
 PDF statistics:
  354 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

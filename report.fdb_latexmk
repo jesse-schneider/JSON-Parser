@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1600505489 "/home/jesse/prog-languages/Assignment-2/report.tex" "/home/jesse/prog-languages/Assignment-2/report.pdf" "report" 1600505489
+["pdflatex"] 1600505995 "/home/jesse/prog-languages/Assignment-2/report.tex" "/home/jesse/prog-languages/Assignment-2/report.pdf" "report" 1600506152
   "/home/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmbx12.pk" 1600502486 14176 8a9496477e2da8cca6acf7dea9cc0dc3 ""
   "/home/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmbx9.pk" 1600502488 10040 dce0341265c6ffb4024bbb6e253b096b ""
   "/home/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr10.pk" 1600502487 10764 19fe04648332317ba2d2cbd7b10999a7 ""
@@ -37,8 +37,8 @@
   "/home/jesse/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty" 1600502040 9343 757bac0d2417c592369f512f701dd39c ""
   "/home/jesse/.miktex/texmfs/install/tex/latex/graphics/keyval.sty" 1600502040 2677 8bf0251bbc6fa542a4741485cf6bf9c9 ""
   "/home/jesse/.miktex/texmfs/install/tex/latex/graphics/trig.sty" 1600502040 4093 a9ed0e8e6719af98ec5e44cff6b193b1 ""
-  "/home/jesse/prog-languages/Assignment-2/report.aux" 1600505489 454 8b3db8476d2ab62847404223730a57de ""
-  "/home/jesse/prog-languages/Assignment-2/report.tex" 1600505488 2400 bc16acfb19d1ec19f825d5992905a3be ""
+  "/home/jesse/prog-languages/Assignment-2/report.aux" 1600506006 454 8b3db8476d2ab62847404223730a57de ""
+  "/home/jesse/prog-languages/Assignment-2/report.tex" 1600506151 2430 79543161d16b8864bc21c09bd15663e0 ""
   "EBNF/array.ebnf" 1600499988 40 a8e62a352e6058dba3528ac9eefdbf39 ""
   "EBNF/array.pdf" 1600501690 4958 115ca144d9f9f4afde03d0d8cef14b58 ""
   "EBNF/digit.ebnf" 1600499988 86 df1c2636ff03096600126a183c623ba8 ""
@@ -53,13 +53,13 @@
   "EBNF/value.pdf" 1600501691 7671 a6f22eeac68c1d2c00a98cb9fe97e00f ""
   "EBNF/whitespace.ebnf" 1600501945 93 9139303e3626e6f81a8681a842f441cd ""
   "EBNF/whitespace.pdf" 1600501691 7411 bee9c886e7ffc056439db9582ed97c38 ""
-  "FillAFour.sty" 1600502249 278 404ff86dec1574e6dec72ead1c768636 ""
-  "HaskellVerb.sty" 1600500754 580 ddba732cb2435bd2401c80b1b7452252 ""
-  "report.aux" 1600505489 454 8b3db8476d2ab62847404223730a57de "pdflatex"
-  "report.tex" 1600505488 2400 bc16acfb19d1ec19f825d5992905a3be ""
+  "latex_packages/FillAFour.sty" 1600505977 278 404ff86dec1574e6dec72ead1c768636 ""
+  "latex_packages/HaskellVerb.sty" 1600505980 580 ddba732cb2435bd2401c80b1b7452252 ""
+  "report.aux" 1600506006 454 8b3db8476d2ab62847404223730a57de "pdflatex"
+  "report.tex" 1600506151 2430 79543161d16b8864bc21c09bd15663e0 ""
   (generated)
-  "report.aux"
   "/home/jesse/prog-languages/Assignment-2/report.log"
+  "report.aux"
+  "report.pdf"
   "/home/jesse/prog-languages/Assignment-2/report.pdf"
   "report.log"
-  "report.pdf"
