@@ -1,0 +1,6 @@
+number ::= whitespace 
+    ["-"] digit { digit } 
+    ["." { digit }]  
+    [("e" | "E") ("-" | "+") {digit}] whitespace;
+
+level="lexical".

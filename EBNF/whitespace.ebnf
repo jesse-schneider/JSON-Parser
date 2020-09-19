@@ -1,0 +1,3 @@
+whitespace ::= { " " $0020$| "\lf" $000A$ | "\cr" $000D$ | "\t" $0009$ }+ ;
+
+level="lexical".

@@ -1,0 +1,5 @@
+string ::= whitespace "\"" 
+    { $Any charcter except " or \\ (regex negated: [^"\])$ } 
+    "\"" whitespace;
+    
+level="lexical".
