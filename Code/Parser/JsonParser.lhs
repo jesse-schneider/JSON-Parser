@@ -1,57 +1,64 @@
-
-module Main (main) where
-
-import System.IO
+\begin{code}
+module JsonParser where
 import ABR.Util.Pos
 import ABR.Parser
 import ABR.Parser.Lexers
 import Data.Char
+import Json
+\end{code}
 
-
-
--- key value pairs to show what is inside a JSON Object
-data KeyValue = KeyValue (String, Json) deriving Show
-
---JSON Data Type
-data Json = String String 
-            | Num Float
-            | Object [KeyValue]
-            | Array [Json]
-            | Bool Bool deriving (Show)
-
-
--- Input Data Type for user input
+Input Data Type for user input:
+\begin{code}
 data Input = Json Json deriving Show
+\end{code}
+
+\subsection*{Lexers}
 
 
--- boolean literal lexers
+Boolean value lexers:
+\begin{code}
 trueL :: Lexer
 trueL = tokenL "true" %> "true"
 
 falseL :: Lexer
 falseL = tokenL "false" %> "false"
+\end{code}
 
 
--- all symbols to look for when lexing
+
+\noindent Symbol Lexer to find all symbols in JSON:
+\begin{code}
 symbolL :: Lexer
 symbolL = literalL '[' <|> literalL ']' 
       <|> literalL '{' <|> literalL '}'
       <|> literalL ':' <|> literalL ','
+\end{code}
 
 
--- list of lexers to use on input
+
+\noindent This is a list of Lexers, all the ones we need to use to get JSON Lexemes:
+\begin{code}
 inputL :: Lexer 
 inputL = dropWhite $ nofail $ total $ listL 
     [whitespaceL, floatL, stringL, literalL 'q', symbolL, trueL, falseL]
+\end{code}
+
+\newpage
+
+\subsection*{Parsers}
 
 
--- Parsers
+\noindent Our input Parser, parsing our Json Lexemes at the highest level:
+\begin{code}
 inputP :: Parser Input
 inputP = nofail $ total (
      jsonP @> Json
     )
+\end{code}
 
--- json value parser
+
+\noindent JSON value Parser, a Parser than can read identify values within JSON:
+\begin{code}
 jsonP :: Parser Json
 jsonP = 
         tagP "string"
@@ -66,9 +73,12 @@ jsonP =
         @> (\x -> Array x)
     <|> objectP
         @> (\j -> Object j)
+\end{code}
 
 
--- array parser
+
+\noindent JSON Array Parser:
+\begin{code}
 arrayP :: Parser [Json]
 arrayP =
     literalP "'['" "["
@@ -82,9 +92,12 @@ arrayP =
     )
     <& nofail (literalP "']'" "]")
     @> (\((_,_,_), ars) -> concat ars)
+\end{code}
 
 
--- object parser
+
+\noindent JSON Object Parser:
+\begin{code}
 objectP :: Parser [KeyValue]
 objectP =
     literalP "'{'" "{"
@@ -98,53 +111,16 @@ objectP =
     )
     <& nofail (literalP "'}'" "}")
     @> (\((_,_,_), ars) -> concat ars)
+\end{code}
 
 
--- Key Value Parser
+
+\noindent Object Key Value Pair Parser:
+\begin{code}
 keyValueP :: Parser KeyValue
 keyValueP =
     tagP "string"
     <&> nofail (literalP "':'" ":")
     &> nofail' "value expected" jsonP
     @> (\((_,l,_),v) -> KeyValue (l, v))
-
-
-{- main function to:
-    - read in Input
-    - prelex the Input into [(Character, Position)]
-    - Lex the prelex pairs into lexemes
-    - Parse the output Lexemes
-    - Display the output or any errors
--}
-
-main :: IO ()
-main = do
-   putStr "> "
-   hFlush stdout
-   json <- getLine
-   let error :: Pos -> Msg -> IO ()
-       error (_,col) msg = do
-          putStrLn $ "Error: " ++ msg
-          putStrLn json
-          let col' = if col < 0
-                 then length json
-                 else col
-          putStrLn $ replicate col' ' '
-             ++ "^"
-          main
-       cps = preLex json
-   putStrLn $ "Pairs: " ++ show cps
-   case inputL cps of
-      Error pos msg -> error pos msg
-      OK (tlps,_)      -> do
-         putStrLn $ "Lexemes: " ++ show tlps
-         case inputP tlps of
-            Error pos msg -> error pos msg
-            OK (input,_)    -> do
-               putStrLn $ "Input : " 
-                  ++ show input
-               case input of
-                  Json j -> do
-                     putStrLn $ "Result: "
-                        ++ show j
-                     main
+\end{code}

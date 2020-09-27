@@ -1,0 +1,12 @@
+\begin{code}
+ParseTree: Object [
+    KeyValue ("\"Name\"",String "\"John\""),
+    KeyValue ("\"Age\"",Num 36.0),
+    KeyValue ("\"Cars\"",
+        Array [Object [
+            KeyValue ("\"type\"",String "\"Mustang\""),
+            KeyValue ("\"age\"",Num 3.0)],
+                Object [
+                    KeyValue ("\"type\"",String "\"Ferrari\""),
+                        KeyValue ("\"age\"",Num 1.0)]])]
+\end{code}

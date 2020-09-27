@@ -114,15 +114,40 @@ to demonstrate how the Lexical Tokens can be combined within JSON:
 
 \section{Task 2: Haskell JSON Data Type}
 
-A Recursive Algebraic Haskell Data Type has been designed to store JSON as seen here:
+An Algebraic Haskell Data Type has been designed to store JSON as seen here:
+
+Note: Array and Object store repeated JSON objects, so as to contain any other Type of JSON Type.
+\input{Code/Parser/Json.lhs}
+
+\newpage
+
+\section{Task 3: Json Lexers + Parsers}
+
+Now that we have a basic idea of what we need for our Lexers and Parsers, its a lot
+easier to implement them.
+
+\input{Code/Parser/JsonParser.lhs}
+
+\subsection*{Parsing Test Program}
+
+\input{Code/Parser/JsonP-Test.lhs}
+
+\newpage
+
+\subsection*{Parsing Example}
+
+Here is our input test JSON:
+\input{Code/Parser/object.lhs}
+
+\noindent After execution, this is what our Parse Tree looks like:
+\input{Code/Parser/output.txt}
 
 
-\subsection*{JSON Data Type}
 
-Note: Array and Object are Recursive so as to store any other Type of JSON.
-\VerbatimInput{Code/Json.hs}
 
-\input
+
+
+
 
 
 \end{document}
