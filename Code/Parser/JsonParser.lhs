@@ -110,7 +110,7 @@ objectP =
         @> cons
     )
     <& nofail (literalP "'}'" "}")
-    @> (\((_,_,_), ars) -> concat ars)
+    @> (\((_,_,_), kvs) -> concat kvs)
 \end{code}
 
 
