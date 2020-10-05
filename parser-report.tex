@@ -136,12 +136,31 @@ easier to implement them.
 
 \subsection*{Parsing Example}
 
-Here is our input test JSON:
+\textbf{Here is our input test JSON:}
 \input{Code/Parser/object.lhs}
 
-\noindent After execution, this is what our Parse Tree looks like:
+\noindent \textbf{After execution, this is what our Parse Tree looks like:}
 \input{Code/Parser/output.txt}
 
+
+\newpage
+
+
+\section{Task 4: JSON Validation}
+
+Following the completion of the Parser, we can now look at using our Parser to test if a JSON file matches a JSON Schema file.
+This is the schema we are going to use to validate:
+\input{Code/Parser/schema.lhs}
+
+\noindent This is our JSON object:
+\input{Code/Parser/data.lhs}
+
+\input{Code/Parser/validation.lhs}
+
+\newpage
+\subsection*{Validator Implementation}
+
+\input{Code/Parser/validator.lhs}
 
 
 

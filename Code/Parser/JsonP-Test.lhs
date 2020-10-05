@@ -1,6 +1,5 @@
 \begin{code}
 module Main (main) where
-import System.IO
 import ABR.Util.Pos
 import ABR.Parser
 

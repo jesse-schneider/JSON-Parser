@@ -1,9 +1,7 @@
 \begin{code}
 module JsonParser where
-import ABR.Util.Pos
 import ABR.Parser
 import ABR.Parser.Lexers
-import Data.Char
 import Json
 \end{code}
 
@@ -40,7 +38,7 @@ symbolL = literalL '[' <|> literalL ']'
 \begin{code}
 inputL :: Lexer 
 inputL = dropWhite $ nofail $ total $ listL 
-    [whitespaceL, floatL, stringL, literalL 'q', symbolL, trueL, falseL]
+    [whitespaceL, floatL, stringL, symbolL, trueL, falseL]
 \end{code}
 
 \newpage
@@ -62,17 +60,17 @@ inputP = nofail $ total (
 jsonP :: Parser Json
 jsonP = 
         tagP "string"
-        @> (\(_, x, _) -> String x)
+        @> (\(_,x,_) -> String x)
     <|> tagP "float"
-        @> (\(_, x, _) -> Num (read x))
+        @> (\(_,x,_) -> Num (read x))
     <|> tagP "true"
-        @> (\(_, x, _) ->  Bool True )
+        @> (\(_,_, _) ->  Bool True )
     <|> tagP "false"
-        @> (\(_, x, _) -> Bool False)
-    <|> arrayP
+        @> (\(_,_,_) -> Bool False)
+    <|> literalP "'['" "[" &> arrayP
         @> (\x -> Array x)
-    <|> objectP
-        @> (\j -> Object j)
+    <|> literalP "'{'" "{" &> objectP
+        @> (\x -> Object x)
 \end{code}
 
 
@@ -80,18 +78,16 @@ jsonP =
 \noindent JSON Array Parser:
 \begin{code}
 arrayP :: Parser [Json]
-arrayP =
-    literalP "'['" "["
-    <&> optional (
-        jsonP
-        <&> many (
+arrayP = optional (
+            jsonP
+            <&> many (
                     literalP "','" ","
-                    &> nofail' "value expected" jsonP
+                    &> nofail' "json value expected" jsonP
             )
         @> cons
     )
     <& nofail (literalP "']'" "]")
-    @> (\((_,_,_), ars) -> concat ars)
+    @> (\ars -> concat ars)
 \end{code}
 
 
@@ -99,18 +95,16 @@ arrayP =
 \noindent JSON Object Parser:
 \begin{code}
 objectP :: Parser [KeyValue]
-objectP =
-    literalP "'{'" "{"
-    <&> optional (
+objectP = optional (
             keyValueP
-        <&> many (
-                literalP "','" ","
-                &> nofail' "value expected" keyValueP
-            )
-        @> cons
-    )
-    <& nofail (literalP "'}'" "}")
-    @> (\((_,_,_), kvs) -> concat kvs)
+            <&> many (
+                    literalP "','" ","
+                    &> nofail' "json value expected" keyValueP
+                )
+            @> cons
+        )
+        <& nofail (literalP "'}'" "}")
+        @> (\kvs -> concat kvs)
 \end{code}
 
 
@@ -121,6 +115,6 @@ keyValueP :: Parser KeyValue
 keyValueP =
     tagP "string"
     <&> nofail (literalP "':'" ":")
-    &> nofail' "value expected" jsonP
+    &> nofail' "json value expected" jsonP
     @> (\((_,l,_),v) -> KeyValue (l, v))
 \end{code}
