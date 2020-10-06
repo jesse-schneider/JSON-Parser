@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.19)  5 OCT 2020 19:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.19)  6 OCT 2020 12:24
 entering extended mode
 **./parser-report.tex
 (parser-report.tex
@@ -186,37 +186,45 @@ File: EBNF/object.pdf Graphic file (type pdf)
 <use EBNF/object.pdf>
 Package pdftex.def Info: EBNF/object.pdf  used on input line 108.
 (pdftex.def)             Requested size: 346.89279pt x 56.00873pt.
-[3 <./EBNF/value.pdf> <./EBNF/array.pdf> <./EBNF/object.pdf>]
-(Code/Parser/Json.lhs) [4] (Code/Parser/JsonParser.lhs [5])
-(Code/Parser/JsonP-Test.lhs [6]
+
+
+pdfTeX warning: pdflatex (file ./EBNF/keyvalue.pdf): PDF inclusion: found PDF v
+ersion <1.7>, but at most version <1.5> allowed
+<EBNF/keyvalue.pdf, id=49, 136.51pt x 31.11626pt>
+File: EBNF/keyvalue.pdf Graphic file (type pdf)
+<use EBNF/keyvalue.pdf>
+Package pdftex.def Info: EBNF/keyvalue.pdf  used on input line 118.
+(pdftex.def)             Requested size: 122.85785pt x 28.00435pt.
+[3 <./EBNF/value.pdf> <./EBNF/array.pdf> <./EBNF/object.pdf> <./EBNF/keyvalue.p
+df>] (Code/Json.lhs) [4] (Code/JsonParser.lhs [5]) (Code/JsonP-Test.lhs
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 9--15
 
  []
 
-) [7] (Code/Parser/object.lhs) (Code/Parser/output.txt) [8]
-(Code/Parser/schema.lhs) (Code/Parser/data.lhs) (Code/Parser/validation.lhs)
-[9] (Code/Parser/validator.lhs [10]) [11] (parser-report.aux) ) 
+) [7] (Code/object.lhs) (Code/output.txt) [8] (Code/schema.lhs) (Code/data.lhs)
+(Code/validation.lhs) [9] (Code/validator.lhs [10]) [11] (parser-report.aux) ) 
 Here is how much of TeX's memory you used:
- 1564 strings out of 493240
- 22704 string characters out of 3157141
+ 1571 strings out of 493240
+ 22654 string characters out of 3157141
  92691 words of memory out of 3000000
- 6817 multiletter control sequences out of 15000+200000
+ 6823 multiletter control sequences out of 15000+200000
  8670 words of font info for 31 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  30i,6n,23p,192b,277s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/jesse/.m
-iktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmbx10.pk> </home/jesse/.mik
-tex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmtt10.pk> </home/jesse/.mikte
-x/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmbx12.pk> </home/jesse/.miktex/
-texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr10.pk> </home/jesse/.miktex/tex
-mfs/data/fonts/pk/ljfour/public/cm/dpi720/cmbx12.pk> </home/jesse/.miktex/texmf
-s/data/fonts/pk/ljfour/public/cm/dpi600/cmr9.pk> </home/jesse/.miktex/texmfs/da
-ta/fonts/pk/ljfour/public/cm/dpi600/cmbx9.pk> </home/jesse/.miktex/texmfs/data/
-fonts/pk/ljfour/public/cm/dpi600/cmr12.pk> </home/jesse/.miktex/texmfs/data/fon
-ts/pk/ljfour/public/cm/dpi600/cmr17.pk>
-Output written on parser-report.pdf (11 pages, 166169 bytes).
+ 
+</home/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmbx10.pk> </
+home/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmtt10.pk> </ho
+me/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmbx12.pk> </home
+/jesse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr10.pk> </home/je
+sse/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi720/cmbx12.pk> </home/jess
+e/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr9.pk> </home/jesse/.m
+iktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmbx9.pk> </home/jesse/.mikt
+ex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr12.pk> </home/jesse/.miktex/
+texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr17.pk>
+Output written on parser-report.pdf (11 pages, 172457 bytes).
 PDF statistics:
- 476 PDF objects out of 1000 (max. 8388607)
+ 490 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

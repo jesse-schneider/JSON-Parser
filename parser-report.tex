@@ -109,6 +109,16 @@ to demonstrate how the Lexical Tokens can be combined within JSON:
 
 }
 
+\subsection*{Key Value}
+\textbf{This EBNF was developed during the Parser development after breaking the object parser down}
+\EBNFInput{EBNF/keyvalue.ebnf}
+
+{\centering
+
+   \includegraphics[scale=0.9]{EBNF/keyvalue}
+
+}
+
 \newpage
 
 
@@ -117,7 +127,7 @@ to demonstrate how the Lexical Tokens can be combined within JSON:
 An Algebraic Haskell Data Type has been designed to store JSON as seen here:
 
 Note: Array and Object store repeated JSON objects, so as to contain any other Type of JSON Type.
-\input{Code/Parser/Json.lhs}
+\input{Code/Json.lhs}
 
 \newpage
 
@@ -126,41 +136,41 @@ Note: Array and Object store repeated JSON objects, so as to contain any other T
 Now that we have a basic idea of what we need for our Lexers and Parsers, its a lot
 easier to implement them.
 
-\input{Code/Parser/JsonParser.lhs}
+\input{Code/JsonParser.lhs}
 
 \subsection*{Parsing Test Program}
 
-\input{Code/Parser/JsonP-Test.lhs}
+\input{Code/JsonP-Test.lhs}
 
 \newpage
 
 \subsection*{Parsing Example}
 
 \textbf{Here is our input test JSON:}
-\input{Code/Parser/object.lhs}
+\input{Code/object.lhs}
 
 \noindent \textbf{After execution, this is what our Parse Tree looks like:}
-\input{Code/Parser/output.txt}
+\input{Code/output.txt}
 
 
 \newpage
 
 
 \section{Task 4: JSON Validation}
-
+\textbf{(Validation works for simple schemas but struggles with complex schemas)} \\
 Following the completion of the Parser, we can now look at using our Parser to test if a JSON file matches a JSON Schema file.
 This is the schema we are going to use to validate:
-\input{Code/Parser/schema.lhs}
+\input{Code/schema.lhs}
 
 \noindent This is our JSON object:
-\input{Code/Parser/data.lhs}
+\input{Code/data.lhs}
 
-\input{Code/Parser/validation.lhs}
+\input{Code/validation.lhs}
 
 \newpage
 \subsection*{Validator Implementation}
 
-\input{Code/Parser/validator.lhs}
+\input{Code/validator.lhs}
 
 
 
